@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="binarytees"
+             errors="0"
+             failures="0"
+             tests="0">
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="BinaryTees URL Regex Test" package="binarytees" skipped="0"
+    tests="0" time="" timestamp="">
+    
+    
+    
+      <system-err>
+        globals is not defined
+      </system-err>
+    
+    </testsuite>
+  
+</testsuites>

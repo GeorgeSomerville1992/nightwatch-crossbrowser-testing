@@ -1,0 +1,920 @@
+17:56:41.206 INFO - Launching a standalone server
+Setting system property webdriver.chrome.driver to ../../lib/chromedriver
+17:56:41.239 INFO - Java: Oracle Corporation 24.71-b01
+17:56:41.240 INFO - OS: Mac OS X 10.10.1 x86_64
+17:56:41.249 INFO - v2.44.0, with Core v2.44.0. Built from revision 76d78cf
+17:56:41.331 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: MAC
+17:56:41.360 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4445/wd/hub
+17:56:41.361 INFO - Version Jetty/5.1.x
+17:56:41.361 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+17:56:41.362 INFO - Started HttpContext[/selenium-server,/selenium-server]
+17:56:41.362 INFO - Started HttpContext[/,/]
+17:56:41.397 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@24e0a659
+17:56:41.397 INFO - Started HttpContext[/wd,/wd]
+17:56:41.401 INFO - Started SocketListener on 0.0.0.0:4445
+17:56:41.401 INFO - Started org.openqa.jetty.jetty.Server@5f6db53a
+17:56:41.603 INFO - Executing: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Binarytees}]])
+17:56:41.613 INFO - Creating a new session for Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Binarytees}]
+17:56:44.515 INFO - Done: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Binarytees}]]
+17:56:44.524 INFO - Executing: [get: http://localhost/~georgesomerville/BinaryTees/binarytees/index.php])
+17:56:45.451 INFO - Done: [get: http://localhost/~georgesomerville/BinaryTees/binarytees/index.php]
+17:56:45.457 INFO - Executing: [execute script: Checkout.addEventHandler(Checkout.Events.CARD_CHARGED, function(event) { console.log('event firing!');console.log(event); });, []])
+17:56:45.466 INFO - Done: [execute script: Checkout.addEventHandler(Checkout.Events.CARD_CHARGED, function(event) { console.log('event firing!');console.log(event); });, []]
+17:56:45.470 INFO - Executing: [get title])
+17:56:45.478 INFO - Done: [get title]
+17:56:45.481 INFO - Executing: [get current window handle])
+17:56:45.487 INFO - Done: [get current window handle]
+17:56:45.493 INFO - Executing: [find element: By.selector: .cko-pay-now])
+17:56:47.241 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":".cko-pay-now"}
+Command duration or timeout: 8 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Session ID: 3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":".cko-pay-now"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
+17:56:47.251 WARN - Exception: Unable to locate element: {"method":"css selector","selector":".cko-pay-now"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Driver info: driver.version: unknown
+17:56:47.832 INFO - Executing: [find element: By.selector: .cko-pay-now])
+17:56:47.889 INFO - Done: [find element: By.selector: .cko-pay-now]
+17:56:47.893 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: .cko-pay-now]])
+17:56:47.903 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: .cko-pay-now]]
+17:56:47.907 INFO - Executing: [find element: By.selector: .cko-pay-now])
+17:56:47.914 INFO - Done: [find element: By.selector: .cko-pay-now]
+17:56:47.917 INFO - Executing: [click: 0 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: .cko-pay-now]])
+17:56:48.018 INFO - Done: [click: 0 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: .cko-pay-now]]
+17:56:48.022 INFO - Executing: [find element: By.selector: #cko-iframe-id])
+17:56:48.384 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#cko-iframe-id"}
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Session ID: 3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#cko-iframe-id"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
+17:56:48.389 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"#cko-iframe-id"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Driver info: driver.version: unknown
+17:56:48.954 INFO - Executing: [find element: By.selector: #cko-iframe-id])
+17:56:48.964 INFO - Done: [find element: By.selector: #cko-iframe-id]
+17:56:48.967 INFO - Executing: [is displayed: 1 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: #cko-iframe-id]])
+17:56:48.974 INFO - Done: [is displayed: 1 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: #cko-iframe-id]]
+17:56:48.978 INFO - Executing: [switch to frame: cko-iframe-id])
+17:56:48.988 INFO - Done: [switch to frame: cko-iframe-id]
+17:56:48.992 INFO - Executing: [find element: By.selector: input[data-checkout=card-number]])
+17:56:49.940 INFO - Done: [find element: By.selector: input[data-checkout=card-number]]
+17:56:49.943 INFO - Executing: [click: 2 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: input[data-checkout=card-number]]])
+17:56:50.009 INFO - Done: [click: 2 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: input[data-checkout=card-number]]]
+17:56:50.014 INFO - Executing: [find element: By.selector: input[data-checkout=card-number]])
+17:56:50.025 INFO - Done: [find element: By.selector: input[data-checkout=card-number]]
+17:56:50.029 INFO - Executing: [send keys: 2 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: input[data-checkout=card-number]], [4, 2, 4, 2,  , 4, 2, 4, 2,  , 4, 2, 4, 2,  , 4, 2, 4, 2]])
+17:56:50.139 INFO - Done: [send keys: 2 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: input[data-checkout=card-number]], [4, 2, 4, 2,  , 4, 2, 4, 2,  , 4, 2, 4, 2,  , 4, 2, 4, 2]]
+17:56:50.142 INFO - Executing: [find element: By.selector: input[data-checkout=expiry-month]])
+17:56:50.150 INFO - Done: [find element: By.selector: input[data-checkout=expiry-month]]
+17:56:50.153 INFO - Executing: [click: 3 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: input[data-checkout=expiry-month]]])
+17:56:50.215 INFO - Done: [click: 3 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: input[data-checkout=expiry-month]]]
+17:56:50.219 INFO - Executing: [find element: By.selector: input[data-checkout=expiry-month]])
+17:56:50.226 INFO - Done: [find element: By.selector: input[data-checkout=expiry-month]]
+17:56:50.230 INFO - Executing: [send keys: 3 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: input[data-checkout=expiry-month]], [0, 6]])
+17:56:50.260 INFO - Done: [send keys: 3 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: input[data-checkout=expiry-month]], [0, 6]]
+17:56:50.264 INFO - Executing: [find element: By.selector: input[data-checkout="expiry-year"]])
+17:56:50.276 INFO - Done: [find element: By.selector: input[data-checkout="expiry-year"]]
+17:56:50.279 INFO - Executing: [click: 4 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: input[data-checkout="expiry-year"]]])
+17:56:50.343 INFO - Done: [click: 4 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: input[data-checkout="expiry-year"]]]
+17:56:50.347 INFO - Executing: [find element: By.selector: input[data-checkout=expiry-year]])
+17:56:50.356 INFO - Done: [find element: By.selector: input[data-checkout=expiry-year]]
+17:56:50.360 INFO - Executing: [send keys: 4 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: input[data-checkout="expiry-year"]], [1, 8]])
+17:56:50.393 INFO - Done: [send keys: 4 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: input[data-checkout="expiry-year"]], [1, 8]]
+17:56:50.397 INFO - Executing: [find element: By.selector: input[data-checkout="cvv"]])
+17:56:50.406 INFO - Done: [find element: By.selector: input[data-checkout="cvv"]]
+17:56:50.408 INFO - Executing: [click: 5 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: input[data-checkout="cvv"]]])
+17:56:50.475 INFO - Done: [click: 5 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: input[data-checkout="cvv"]]]
+17:56:50.478 INFO - Executing: [find element: By.selector: input[data-checkout=cvv]])
+17:56:50.489 INFO - Done: [find element: By.selector: input[data-checkout=cvv]]
+17:56:50.493 INFO - Executing: [send keys: 5 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: input[data-checkout="cvv"]], [1, 0, 0]])
+17:56:50.527 INFO - Done: [send keys: 5 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: input[data-checkout="cvv"]], [1, 0, 0]]
+17:56:50.531 INFO - Executing: [find element: By.selector: .form-submit])
+17:56:50.540 INFO - Done: [find element: By.selector: .form-submit]
+17:56:50.543 INFO - Executing: [click: 6 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: .form-submit]])
+17:56:50.607 INFO - Done: [click: 6 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: .form-submit]]
+17:56:50.612 INFO - Executing: [find element: By.selector: input[data-checkout=card-number]])
+17:56:50.621 INFO - Done: [find element: By.selector: input[data-checkout=card-number]]
+17:56:50.624 INFO - Executing: [get element attribute: 2 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: input[data-checkout=card-number]], value])
+17:56:50.630 INFO - Done: [get element attribute: 2 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: input[data-checkout=card-number]], value]
+17:56:50.634 INFO - Executing: [find element: By.selector: input[data-checkout=expiry-month]])
+17:56:50.640 INFO - Done: [find element: By.selector: input[data-checkout=expiry-month]]
+17:56:50.643 INFO - Executing: [get element attribute: 3 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: input[data-checkout=expiry-month]], value])
+17:56:50.649 INFO - Done: [get element attribute: 3 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: input[data-checkout=expiry-month]], value]
+17:56:50.653 INFO - Executing: [find element: By.selector: input[data-checkout=expiry-year]])
+17:56:50.659 INFO - Done: [find element: By.selector: input[data-checkout=expiry-year]]
+17:56:50.662 INFO - Executing: [get element attribute: 4 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: input[data-checkout="expiry-year"]], value])
+17:56:50.670 INFO - Done: [get element attribute: 4 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: input[data-checkout="expiry-year"]], value]
+17:56:50.674 INFO - Executing: [find element: By.selector: input[data-checkout=cvv]])
+17:56:50.681 INFO - Done: [find element: By.selector: input[data-checkout=cvv]]
+17:56:50.684 INFO - Executing: [get element attribute: 5 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: input[data-checkout="cvv"]], value])
+17:56:50.690 INFO - Done: [get element attribute: 5 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: input[data-checkout="cvv"]], value]
+17:56:50.693 INFO - Executing: [switch to parent frame])
+17:56:50.698 INFO - Done: [switch to parent frame]
+17:56:50.702 INFO - Executing: [find element: By.selector: .payment-form])
+17:56:50.708 INFO - Done: [find element: By.selector: .payment-form]
+17:56:50.711 INFO - Executing: [is displayed: 7 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: .payment-form]])
+17:56:50.720 INFO - Done: [is displayed: 7 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: .payment-form]]
+17:56:50.723 INFO - Executing: [find element: By.selector: form input[name=cko-payment-token]])
+17:56:51.045 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"form input[name=cko-payment-token]"}
+Command duration or timeout: 7 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Session ID: 3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"form input[name=cko-payment-token]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
+17:56:51.050 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"form input[name=cko-payment-token]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Driver info: driver.version: unknown
+17:56:51.617 INFO - Executing: [find element: By.selector: form input[name=cko-payment-token]])
+17:56:51.990 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"form input[name=cko-payment-token]"}
+Command duration or timeout: 8 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Session ID: 3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"form input[name=cko-payment-token]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
+17:56:51.996 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"form input[name=cko-payment-token]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Driver info: driver.version: unknown
+17:56:52.552 INFO - Executing: [find element: By.selector: form input[name=cko-payment-token]])
+17:56:52.851 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"form input[name=cko-payment-token]"}
+Command duration or timeout: 9 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Session ID: 3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"form input[name=cko-payment-token]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
+17:56:52.857 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"form input[name=cko-payment-token]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Driver info: driver.version: unknown
+17:56:53.456 INFO - Executing: [find element: By.selector: form input[name=cko-payment-token]])
+17:56:53.744 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"form input[name=cko-payment-token]"}
+Command duration or timeout: 9 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Session ID: 3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"form input[name=cko-payment-token]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
+17:56:53.751 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"form input[name=cko-payment-token]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Driver info: driver.version: unknown
+17:56:54.311 INFO - Executing: [find element: By.selector: form input[name=cko-payment-token]])
+17:56:54.621 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"form input[name=cko-payment-token]"}
+Command duration or timeout: 11 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Session ID: 3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"form input[name=cko-payment-token]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous6507010667922394066webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
+17:56:54.628 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"form input[name=cko-payment-token]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Driver info: driver.version: unknown
+17:56:55.182 INFO - Executing: [find element: By.selector: form input[name=cko-payment-token]])
+17:56:55.192 INFO - Done: [find element: By.selector: form input[name=cko-payment-token]]
+17:56:55.196 INFO - Executing: [find element: By.selector: form input[name=cko-payment-token]])
+17:56:55.204 INFO - Done: [find element: By.selector: form input[name=cko-payment-token]]
+17:56:55.206 INFO - Executing: [get element attribute: 8 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: form input[name=cko-payment-token]], value])
+17:56:55.214 INFO - Done: [get element attribute: 8 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: form input[name=cko-payment-token]], value]
+17:56:55.218 INFO - Executing: [find element: By.selector: .payment-form])
+17:56:55.224 INFO - Done: [find element: By.selector: .payment-form]
+17:56:55.227 INFO - Executing: [get element attribute: 7 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: .payment-form], action])
+17:56:55.235 INFO - Done: [get element attribute: 7 [[FirefoxDriver: firefox on MAC (3efb5edd-b4ce-bf4d-bb7f-a8b2eb268ef1)] -> css selector: .payment-form], action]
+17:56:55.238 INFO - Executing: [delete session: 6f36687b-8762-4d4b-9c3c-16c959a5ab27])
+17:56:55.314 INFO - Done: [delete session: 6f36687b-8762-4d4b-9c3c-16c959a5ab27]
+17:56:55.321 INFO - Executing: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Binarytees}]])
+17:56:55.321 INFO - Creating a new session for Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Binarytees}]
+17:56:58.314 INFO - Done: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Binarytees}]]
+17:56:58.318 INFO - Executing: [get: http://localhost/~georgesomerville/BinaryTees/binarytees/index.php])
+17:56:59.155 INFO - Done: [get: http://localhost/~georgesomerville/BinaryTees/binarytees/index.php]
+17:56:59.159 INFO - Executing: [execute script: Checkout.addEventHandler(Checkout.Events.CARD_CHARGED, function(event) { console.log('event firing!');console.log(event); });, []])
+17:56:59.167 INFO - Done: [execute script: Checkout.addEventHandler(Checkout.Events.CARD_CHARGED, function(event) { console.log('event firing!');console.log(event); });, []]
+17:56:59.170 INFO - Executing: [get title])
+17:56:59.178 INFO - Done: [get title]
+17:56:59.181 INFO - Executing: [get current window handle])
+17:56:59.186 INFO - Done: [get current window handle]
+17:56:59.191 INFO - Executing: [find element: By.selector: .cko-pay-now])
+17:56:59.487 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":".cko-pay-now"}
+Command duration or timeout: 8 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Session ID: 04373133-b6c5-c84c-9264-992346b9a8b9
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":".cko-pay-now"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
+17:56:59.493 WARN - Exception: Unable to locate element: {"method":"css selector","selector":".cko-pay-now"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Driver info: driver.version: unknown
+17:57:00.047 INFO - Executing: [find element: By.selector: .cko-pay-now])
+17:57:00.197 INFO - Done: [find element: By.selector: .cko-pay-now]
+17:57:00.200 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: .cko-pay-now]])
+17:57:00.210 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: .cko-pay-now]]
+17:57:00.213 INFO - Executing: [find element: By.selector: .cko-pay-now])
+17:57:00.219 INFO - Done: [find element: By.selector: .cko-pay-now]
+17:57:00.221 INFO - Executing: [click: 0 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: .cko-pay-now]])
+17:57:00.322 INFO - Done: [click: 0 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: .cko-pay-now]]
+17:57:00.326 INFO - Executing: [find element: By.selector: #cko-iframe-id])
+17:57:00.667 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#cko-iframe-id"}
+Command duration or timeout: 11 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Session ID: 04373133-b6c5-c84c-9264-992346b9a8b9
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#cko-iframe-id"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
+17:57:00.673 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"#cko-iframe-id"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Driver info: driver.version: unknown
+17:57:01.233 INFO - Executing: [find element: By.selector: #cko-iframe-id])
+17:57:01.242 INFO - Done: [find element: By.selector: #cko-iframe-id]
+17:57:01.245 INFO - Executing: [is displayed: 1 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: #cko-iframe-id]])
+17:57:01.259 INFO - Done: [is displayed: 1 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: #cko-iframe-id]]
+17:57:01.263 INFO - Executing: [switch to frame: cko-iframe-id])
+17:57:01.270 INFO - Done: [switch to frame: cko-iframe-id]
+17:57:01.273 INFO - Executing: [find element: By.selector: input[data-checkout=card-number]])
+17:57:02.615 INFO - Done: [find element: By.selector: input[data-checkout=card-number]]
+17:57:02.618 INFO - Executing: [click: 2 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout=card-number]]])
+17:57:02.687 INFO - Done: [click: 2 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout=card-number]]]
+17:57:02.691 INFO - Executing: [find element: By.selector: input[data-checkout=card-number]])
+17:57:02.703 INFO - Done: [find element: By.selector: input[data-checkout=card-number]]
+17:57:02.706 INFO - Executing: [send keys: 2 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout=card-number]], [4, 2, 4, 2,  , 4, 2, 4, 2,  , 4, 2, 4, 2,  , 4, 2, 4, 2]])
+17:57:02.818 INFO - Done: [send keys: 2 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout=card-number]], [4, 2, 4, 2,  , 4, 2, 4, 2,  , 4, 2, 4, 2,  , 4, 2, 4, 2]]
+17:57:02.821 INFO - Executing: [find element: By.selector: input[data-checkout=expiry-month]])
+17:57:02.827 INFO - Done: [find element: By.selector: input[data-checkout=expiry-month]]
+17:57:02.829 INFO - Executing: [click: 3 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout=expiry-month]]])
+17:57:02.891 INFO - Done: [click: 3 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout=expiry-month]]]
+17:57:02.893 INFO - Executing: [find element: By.selector: input[data-checkout=expiry-month]])
+17:57:02.902 INFO - Done: [find element: By.selector: input[data-checkout=expiry-month]]
+17:57:02.905 INFO - Executing: [send keys: 3 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout=expiry-month]], [0, 1]])
+17:57:02.941 INFO - Done: [send keys: 3 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout=expiry-month]], [0, 1]]
+17:57:02.944 INFO - Executing: [find element: By.selector: input[data-checkout="expiry-year"]])
+17:57:03.017 INFO - Done: [find element: By.selector: input[data-checkout="expiry-year"]]
+17:57:03.019 INFO - Executing: [click: 4 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout="expiry-year"]]])
+17:57:03.081 INFO - Done: [click: 4 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout="expiry-year"]]]
+17:57:03.085 INFO - Executing: [find element: By.selector: input[data-checkout=expiry-year]])
+17:57:03.093 INFO - Done: [find element: By.selector: input[data-checkout=expiry-year]]
+17:57:03.096 INFO - Executing: [send keys: 4 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout="expiry-year"]], [1, 7]])
+17:57:03.125 INFO - Done: [send keys: 4 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout="expiry-year"]], [1, 7]]
+17:57:03.129 INFO - Executing: [find element: By.selector: input[data-checkout="cvv"]])
+17:57:03.135 INFO - Done: [find element: By.selector: input[data-checkout="cvv"]]
+17:57:03.137 INFO - Executing: [click: 5 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout="cvv"]]])
+17:57:03.199 INFO - Done: [click: 5 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout="cvv"]]]
+17:57:03.203 INFO - Executing: [find element: By.selector: input[data-checkout=cvv]])
+17:57:03.211 INFO - Done: [find element: By.selector: input[data-checkout=cvv]]
+17:57:03.214 INFO - Executing: [send keys: 5 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout="cvv"]], [9, 9, 9]])
+17:57:03.248 INFO - Done: [send keys: 5 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout="cvv"]], [9, 9, 9]]
+17:57:03.252 INFO - Executing: [find element: By.selector: .form-submit])
+17:57:03.261 INFO - Done: [find element: By.selector: .form-submit]
+17:57:03.264 INFO - Executing: [click: 6 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: .form-submit]])
+17:57:03.324 INFO - Done: [click: 6 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: .form-submit]]
+17:57:03.327 INFO - Executing: [find element: By.selector: div[class=msg-holder]])
+17:57:03.333 INFO - Done: [find element: By.selector: div[class=msg-holder]]
+17:57:03.335 INFO - Executing: [is displayed: 7 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: div[class=msg-holder]]])
+17:57:03.341 INFO - Done: [is displayed: 7 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: div[class=msg-holder]]]
+17:57:03.846 INFO - Executing: [is displayed: 7 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: div[class=msg-holder]]])
+17:57:03.855 INFO - Done: [is displayed: 7 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: div[class=msg-holder]]]
+17:57:04.361 INFO - Executing: [is displayed: 7 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: div[class=msg-holder]]])
+17:57:04.371 INFO - Done: [is displayed: 7 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: div[class=msg-holder]]]
+17:57:04.874 INFO - Executing: [is displayed: 7 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: div[class=msg-holder]]])
+17:57:04.883 INFO - Done: [is displayed: 7 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: div[class=msg-holder]]]
+17:57:05.390 INFO - Executing: [is displayed: 7 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: div[class=msg-holder]]])
+17:57:05.400 INFO - Done: [is displayed: 7 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: div[class=msg-holder]]]
+17:57:05.403 INFO - Executing: [find element: By.selector: span[class=circle]])
+17:57:05.411 INFO - Done: [find element: By.selector: span[class=circle]]
+17:57:05.413 INFO - Executing: [is displayed: 8 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: span[class=circle]]])
+17:57:05.423 INFO - Done: [is displayed: 8 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: span[class=circle]]]
+17:57:05.427 INFO - Executing: [find element: By.selector: .ckojs-cross])
+17:57:05.433 INFO - Done: [find element: By.selector: .ckojs-cross]
+17:57:05.436 INFO - Executing: [is displayed: 9 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: .ckojs-cross]])
+17:57:05.445 INFO - Done: [is displayed: 9 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: .ckojs-cross]]
+17:57:05.450 INFO - Executing: [find element: By.selector: .title])
+17:57:05.468 INFO - Done: [find element: By.selector: .title]
+17:57:05.470 INFO - Executing: [get text: 10 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: .title]])
+17:57:05.479 INFO - Done: [get text: 10 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: .title]]
+17:57:05.482 INFO - Executing: [find element: By.selector: .text])
+17:57:05.496 INFO - Done: [find element: By.selector: .text]
+17:57:05.499 INFO - Executing: [get text: 11 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: .text]])
+17:57:05.508 INFO - Done: [get text: 11 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: .text]]
+17:57:05.511 INFO - Executing: [find element: By.selector: .btn])
+17:57:05.519 INFO - Done: [find element: By.selector: .btn]
+17:57:05.522 INFO - Executing: [get element attribute: 12 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: .btn], value])
+17:57:05.528 INFO - Done: [get element attribute: 12 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: .btn], value]
+17:57:05.531 INFO - Executing: [find element: By.selector: .go-back])
+17:57:05.537 INFO - Done: [find element: By.selector: .go-back]
+17:57:05.539 INFO - Executing: [is displayed: 13 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: .go-back]])
+17:57:05.546 INFO - Done: [is displayed: 13 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: .go-back]]
+17:57:05.549 INFO - Executing: [find element: By.selector: .go-back])
+17:57:05.556 INFO - Done: [find element: By.selector: .go-back]
+17:57:05.558 INFO - Executing: [click: 13 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: .go-back]])
+17:57:05.620 INFO - Done: [click: 13 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: .go-back]]
+17:57:05.622 INFO - Executing: [find element: By.selector: .cko-md-content])
+17:57:05.629 INFO - Done: [find element: By.selector: .cko-md-content]
+17:57:05.631 INFO - Executing: [is displayed: 14 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: .cko-md-content]])
+17:57:05.639 INFO - Done: [is displayed: 14 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: .cko-md-content]]
+17:57:05.642 INFO - Executing: [find element: By.selector: input[data-checkout=expiry-month]])
+17:57:05.649 INFO - Done: [find element: By.selector: input[data-checkout=expiry-month]]
+17:57:05.651 INFO - Executing: [clear: 3 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout=expiry-month]]])
+17:57:05.666 INFO - Done: [clear: 3 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout=expiry-month]]]
+17:57:05.670 INFO - Executing: [find element: By.selector: input[data-checkout=expiry-year]])
+17:57:05.678 INFO - Done: [find element: By.selector: input[data-checkout=expiry-year]]
+17:57:05.681 INFO - Executing: [clear: 4 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout="expiry-year"]]])
+17:57:05.706 INFO - Done: [clear: 4 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout="expiry-year"]]]
+17:57:05.709 INFO - Executing: [find element: By.selector: input[data-checkout=cvv]])
+17:57:05.717 INFO - Done: [find element: By.selector: input[data-checkout=cvv]]
+17:57:05.720 INFO - Executing: [clear: 5 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout="cvv"]]])
+17:57:05.742 INFO - Done: [clear: 5 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout="cvv"]]]
+17:57:05.745 INFO - Executing: [find element: By.selector: input[data-checkout=card-number]])
+17:57:05.756 INFO - Done: [find element: By.selector: input[data-checkout=card-number]]
+17:57:05.758 INFO - Executing: [click: 2 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout=card-number]]])
+17:57:05.824 INFO - Done: [click: 2 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout=card-number]]]
+17:57:05.827 INFO - Executing: [find element: By.selector: input[data-checkout=card-number]])
+17:57:05.834 INFO - Done: [find element: By.selector: input[data-checkout=card-number]]
+17:57:05.837 INFO - Executing: [send keys: 2 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout=card-number]], [4, 2, 4, 2,  , 4, 2, 4, 2,  , 4, 2, 4, 2,  , 4, 2, 4, 2]])
+17:57:05.894 INFO - Done: [send keys: 2 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout=card-number]], [4, 2, 4, 2,  , 4, 2, 4, 2,  , 4, 2, 4, 2,  , 4, 2, 4, 2]]
+17:57:05.897 INFO - Executing: [find element: By.selector: input[data-checkout=expiry-month]])
+17:57:05.908 INFO - Done: [find element: By.selector: input[data-checkout=expiry-month]]
+17:57:05.911 INFO - Executing: [click: 3 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout=expiry-month]]])
+17:57:05.976 INFO - Done: [click: 3 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout=expiry-month]]]
+17:57:05.980 INFO - Executing: [find element: By.selector: input[data-checkout=expiry-month]])
+17:57:05.990 INFO - Done: [find element: By.selector: input[data-checkout=expiry-month]]
+17:57:05.993 INFO - Executing: [send keys: 3 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout=expiry-month]], [0, 6]])
+17:57:06.029 INFO - Done: [send keys: 3 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout=expiry-month]], [0, 6]]
+17:57:06.032 INFO - Executing: [find element: By.selector: input[data-checkout="expiry-year"]])
+17:57:06.043 INFO - Done: [find element: By.selector: input[data-checkout="expiry-year"]]
+17:57:06.045 INFO - Executing: [click: 4 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout="expiry-year"]]])
+17:57:06.108 INFO - Done: [click: 4 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout="expiry-year"]]]
+17:57:06.111 INFO - Executing: [find element: By.selector: input[data-checkout=expiry-year]])
+17:57:06.118 INFO - Done: [find element: By.selector: input[data-checkout=expiry-year]]
+17:57:06.121 INFO - Executing: [send keys: 4 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout="expiry-year"]], [1, 8]])
+17:57:06.149 INFO - Done: [send keys: 4 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout="expiry-year"]], [1, 8]]
+17:57:06.153 INFO - Executing: [find element: By.selector: input[data-checkout="cvv"]])
+17:57:06.161 INFO - Done: [find element: By.selector: input[data-checkout="cvv"]]
+17:57:06.164 INFO - Executing: [click: 5 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout="cvv"]]])
+17:57:06.228 INFO - Done: [click: 5 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout="cvv"]]]
+17:57:06.231 INFO - Executing: [find element: By.selector: input[data-checkout=cvv]])
+17:57:06.242 INFO - Done: [find element: By.selector: input[data-checkout=cvv]]
+17:57:06.245 INFO - Executing: [send keys: 5 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout="cvv"]], [1, 0, 0]])
+17:57:06.278 INFO - Done: [send keys: 5 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: input[data-checkout="cvv"]], [1, 0, 0]]
+17:57:06.281 INFO - Executing: [find element: By.selector: .form-submit])
+17:57:06.291 INFO - Done: [find element: By.selector: .form-submit]
+17:57:06.294 INFO - Executing: [click: 6 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: .form-submit]])
+17:57:06.357 INFO - Done: [click: 6 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: .form-submit]]
+17:57:06.359 INFO - Executing: [switch to parent frame])
+17:57:06.366 INFO - Done: [switch to parent frame]
+17:57:06.369 INFO - Executing: [find element: By.selector: .payment-form])
+17:57:06.376 INFO - Done: [find element: By.selector: .payment-form]
+17:57:06.379 INFO - Executing: [is displayed: 15 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: .payment-form]])
+17:57:06.386 INFO - Done: [is displayed: 15 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: .payment-form]]
+17:57:06.390 INFO - Executing: [find element: By.selector: form input[name=cko-payment-token]])
+17:57:06.687 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"form input[name=cko-payment-token]"}
+Command duration or timeout: 6 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Session ID: 04373133-b6c5-c84c-9264-992346b9a8b9
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"form input[name=cko-payment-token]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
+17:57:06.692 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"form input[name=cko-payment-token]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Driver info: driver.version: unknown
+17:57:07.248 INFO - Executing: [find element: By.selector: form input[name=cko-payment-token]])
+17:57:07.573 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"form input[name=cko-payment-token]"}
+Command duration or timeout: 25 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Session ID: 04373133-b6c5-c84c-9264-992346b9a8b9
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"form input[name=cko-payment-token]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
+17:57:07.579 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"form input[name=cko-payment-token]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Driver info: driver.version: unknown
+17:57:08.169 INFO - Executing: [find element: By.selector: form input[name=cko-payment-token]])
+17:57:08.460 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"form input[name=cko-payment-token]"}
+Command duration or timeout: 10 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Session ID: 04373133-b6c5-c84c-9264-992346b9a8b9
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"form input[name=cko-payment-token]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
+17:57:08.466 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"form input[name=cko-payment-token]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Driver info: driver.version: unknown
+17:57:09.025 INFO - Executing: [find element: By.selector: form input[name=cko-payment-token]])
+17:57:09.319 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"form input[name=cko-payment-token]"}
+Command duration or timeout: 8 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Session ID: 04373133-b6c5-c84c-9264-992346b9a8b9
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"form input[name=cko-payment-token]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/4q/5qpq2bk53879qnkmjlkrrj480000gn/T/anonymous8718544030779702625webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
+17:57:09.325 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"form input[name=cko-payment-token]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'vlads-mac-mini.localdomain', ip: '192.168.1.109', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_71'
+Driver info: driver.version: unknown
+17:57:09.879 INFO - Executing: [find element: By.selector: form input[name=cko-payment-token]])
+17:57:09.905 INFO - Done: [find element: By.selector: form input[name=cko-payment-token]]
+17:57:09.910 INFO - Executing: [find element: By.selector: form input[name=cko-payment-token]])
+17:57:09.919 INFO - Done: [find element: By.selector: form input[name=cko-payment-token]]
+17:57:09.922 INFO - Executing: [get element attribute: 16 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: form input[name=cko-payment-token]], value])
+17:57:09.928 INFO - Done: [get element attribute: 16 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: form input[name=cko-payment-token]], value]
+17:57:09.931 INFO - Executing: [find element: By.selector: .payment-form])
+17:57:09.938 INFO - Done: [find element: By.selector: .payment-form]
+17:57:09.941 INFO - Executing: [get element attribute: 15 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: .payment-form], action])
+17:57:09.948 INFO - Done: [get element attribute: 15 [[FirefoxDriver: firefox on MAC (04373133-b6c5-c84c-9264-992346b9a8b9)] -> css selector: .payment-form], action]
+17:57:09.951 INFO - Executing: [delete session: 20d4dbd1-d313-4f81-b39f-bac01fc83dfb])
+17:57:10.030 INFO - Done: [delete session: 20d4dbd1-d313-4f81-b39f-bac01fc83dfb]

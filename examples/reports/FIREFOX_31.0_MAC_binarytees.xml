@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="binarytees"
+             errors="0"
+             failures="0"
+             tests="22">
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="BinaryTees URL Regex Test" package="binarytees" skipped="0"
+    tests="9" time="" timestamp="">
+    
+    
+      <testcase name="Testing if the page title equals &quot;BINARY TEES&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.cko-pay-now&gt; was visible after 2415 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#cko-iframe-id&gt; was visible after 955 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if value of &lt;input[data-checkout=card-number]&gt; contains: &quot;4242 4242 4242 4242&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if value of &lt;input[data-checkout=expiry-month]&gt; contains: &quot;06&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if value of &lt;input[data-checkout=expiry-year]&gt; contains: &quot;18&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if value of &lt;input[data-checkout=cvv]&gt; contains: &quot;100&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.payment-form&gt; was visible after 21 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;form input[name=cko-payment-token]&gt; was present after 4472 milliseconds.">
+        
+        
+      </testcase>
+    
+    
+    </testsuite>
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="BinaryTees incorrect information Test" package="binarytees" skipped="0"
+    tests="13" time="" timestamp="">
+    
+    
+      <testcase name="Testing if the page title equals &quot;BINARY TEES&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.cko-pay-now&gt; was visible after 1021 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#cko-iframe-id&gt; was visible after 937 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;div[class=msg-holder]&gt; was visible after 2076 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;span[class=circle]&gt; was visible after 23 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;.ckojs-cross&gt; is visible.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;.title&gt; contains text: &quot; &quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;.text&gt; contains text: &quot; &quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if value of &lt;.btn&gt; contains: &quot;Retry&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;.go-back&gt; is visible.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.cko-md-content&gt; was visible after 19 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.payment-form&gt; was visible after 20 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;form input[name=cko-payment-token]&gt; was present after 3518 milliseconds.">
+        
+        
+      </testcase>
+    
+    
+    </testsuite>
+  
+</testsuites>

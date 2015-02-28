@@ -1,0 +1,95 @@
+{
+    "src_folders": ["examples/tests"],
+    "output_folder": "examples/reports",
+    "custom_commands_path": "",
+    "custom_assertions_path": "",
+    "globals_path": "../../lib/constants.js",
+    "globals": {
+        "Cards": {
+            "success": {
+                "visa": {
+                    "CARD_NUMBER": "4242 4242 4242 4242",
+                    "EXPIRY_MONTH": "06",
+                    "EXPIRY_YEAR": "18",
+                    "CVV": "100"
+                }
+
+            },
+            "fail": {
+                "visa": {
+                    "INCORRECT_CARD_NUMBER": "4242 4242 4242 4242",
+                    "INCORRECT_EXPIRY_MONTH": "01",
+                    "INCORRECT_EXPIRY_YEAR": "17",
+                    "INCORRECT_CVV": "999"
+                }
+            }
+        }
+
+    },
+
+    "selenium": {
+        "start_process": true,
+        "server_path": "../../lib/seleniumTest.jar",
+        "log_path": "",
+        "host": "127.0.0.1",
+        "port": 4445,
+        "cli_args": {
+            "webdriver.chrome.driver": "../../lib/chromedriver",
+            "webdriver.ie.driver": ""
+        }
+    },
+
+
+    "test_settings": {
+        "default": {
+            "launch_url": "http://localhost",
+            "selenium_port": 4445,
+            "selenium_host": "localhost",
+            "silent": true,
+            "screenshots": {
+                "enabled": false,
+                "path": ""
+            },
+            "desiredCapabilities": {
+                "browserName": "firefox",
+                "javascriptEnabled": true,
+                "acceptSslCerts": true
+            },
+            "globals": {
+                "Cards": {
+                    "success": {
+                        "visa": {
+                            "CARD_NUMBER": "4242 4242 4242 4242",
+                            "EXPIRY_MONTH": "06",
+                            "EXPIRY_YEAR": "18",
+                            "CVV": "100"
+                        }
+
+                    },
+                    "fail": {
+                        "visa": {
+                            "INCORRECT_CARD_NUMBER": "4242 4242 4242 4242",
+                            "INCORRECT_EXPIRY_MONTH": "01",
+                            "INCORRECT_EXPIRY_YEAR": "17",
+                            "INCORRECT_CVV": "999"
+                        }
+                    }
+                }
+
+            }
+        },
+
+        "chrome": {
+            "desiredCapabilities": {
+                "browserName": "chrome",
+                "javascriptEnabled": true,
+                "acceptSslCerts": true
+            }
+        },
+        "safari": {
+            "browserName": "safari",
+            "javascriptEnabled": true,
+            "acceptSslCerts": true
+        }
+    }
+}
